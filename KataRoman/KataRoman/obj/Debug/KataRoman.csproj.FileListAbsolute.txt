@@ -1,0 +1,6 @@
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.csprojResolveAssemblyReference.cache
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\bin\Debug\KataRoman.exe.config
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\bin\Debug\KataRoman.exe
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\bin\Debug\KataRoman.pdb
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.exe
+c:\users\usr\documents\visual studio 2017\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.pdb
