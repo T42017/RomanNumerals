@@ -1,0 +1,6 @@
+C:\git files\RomanNumerals\Romans\Romans\bin\Debug\Romans.exe.config
+C:\git files\RomanNumerals\Romans\Romans\bin\Debug\Romans.exe
+C:\git files\RomanNumerals\Romans\Romans\bin\Debug\Romans.pdb
+C:\git files\RomanNumerals\Romans\Romans\obj\Debug\Romans.csprojResolveAssemblyReference.cache
+C:\git files\RomanNumerals\Romans\Romans\obj\Debug\Romans.exe
+C:\git files\RomanNumerals\Romans\Romans\obj\Debug\Romans.pdb
