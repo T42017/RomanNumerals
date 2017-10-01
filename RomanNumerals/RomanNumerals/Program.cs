@@ -23,18 +23,12 @@ namespace RomanNumerals
                     int counter = int.Parse(input);
 
                     string output = "";
-
-                    //if (counter >= 3000)
-                    //{
-                    //    counter -= 3000;
-                    //    output = output + "MMM";
-                    //}
+                 
                         if (counter >= 2000)
                         {
                             counter -= 2000;
                             output = output + "MM";
                         }
-
                         if (counter >= 1000)
                         {
                             counter -= 1000;
