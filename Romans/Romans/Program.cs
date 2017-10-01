@@ -10,58 +10,141 @@ namespace Romans
     {
         static void Main(string[] args)
         {
-            
-            
-            int value;
-            
+            int hundred, tens, ones;
+            String tusen = "", hundra, output = "", tiotal = "", ental;
+            Console.WriteLine("Enter your four digit number: ");
+            String input = Console.ReadLine();
 
-            Console.Write("Enter your number:");
-            value = Convert.ToInt16(Console.ReadLine());
-
-            
-
-            if (value == 1) 
+            if (input.Length == 4)
             {
-                Console.WriteLine("I");
+                tusen = input.Substring(0, 1);
+
+                for (int i = 0; i < int.Parse(tusen); i++)
+                    output = output + "M";
+
+                hundra = input.Substring(1, 1);
+                hundred = int.Parse(hundra);
+
+                if (hundred >= 5)
+                {
+                    output = output + "D";
+                    hundred = hundred - 5;
+                }
+
+                for (int i = 0; i < hundred; i = i + 1)
+                    output = output + "C";
+
+                tiotal = input.Substring(2, 1);
+                tens = int.Parse(tiotal);
+
+                if (tens >= 5)
+                {
+                    output = output + "L";
+                    tens = tens - 5;
+                }
+
+                for (int i = 0; i < tens; i = i + 1)
+                    output = output + "X";
+
+                ental = input.Substring(3, 1);
+                ones = int.Parse(ental);
+
+                if (ones >= 5)
+
+                {
+                    output = output + "V";
+                    ones = ones - 5;
+                }
+                for (int i = 0; i < ones; i = i + 1)
+                    output = output + "I";
+
+            }
+            else if (input.Length == 3)
+            {
+                hundra = input.Substring(0, 1);
+                hundred = int.Parse(hundra);
+
+                if (hundred >= 5)
+                {
+                    output = output + "D";
+                    hundred = hundred - 5;
+                }
+
+                for (int i = 0; i < hundred; i = i + 1)
+                    output = output + "C";
+
+                tiotal = input.Substring(1, 1);
+                tens = int.Parse(tiotal);
+                if (tens >= 5)
+                {
+                    output = output + "L";
+                    tens = tens - 5;
+                }
+                for (int i = 0; i < tens; i = i + 1)
+                    output = output + "X";
+
+                ental = input.Substring(2, 1);
+                ones = int.Parse(ental);
+                if (ones >= 5)
+                {
+                    output = output + "V";
+                    ones = ones - 5;
+                }
+                for (int i = 0; i < ones; i = i + 1)
+                    output = output + "I";
             }
 
-            if (value == 5)
+            else if (input.Length == 2)
             {
-                Console.WriteLine("V");
+                tiotal = input.Substring(0, 1);
+                tens = int.Parse(tiotal);
+
+                if (tens >= 5)
+
+                {
+                    output = output + "L";
+                    tens = tens - 5;
+                }
+                for (int i = 0; i < tens; i = i + 1)
+                    output = output + "X";
+
+                ental = input.Substring(1, 1);
+                ones = int.Parse(ental);
+
+                if (ones >= 5)
+
+                {
+                    output = output + "V";
+                    ones = ones - 5;
+                }
+                for (int i = 0; i < ones; i = i + 1)
+                    output = output + "I";
             }
 
-            if (value == 10)
+            else if (input.Length == 1)
+
             {
-                Console.WriteLine("X");
+                ental = input.Substring(0, 1);
+                ones = int.Parse(ental);
+                if (ones >= 5)
+                {
+                    output = output + "V";
+                    ones = ones - 5;
+                }
+                for (int i = 0; i < ones; i = i + 1)
+                    output = output + "I";
             }
+            else
+                output = "";
 
-            if (value == 50)
-            {
-                Console.WriteLine("L");
-            }
 
-            if (value == 100)
-            {
-                Console.WriteLine("C");
-            }
-
-            if (value == 500)
-            {
-                Console.WriteLine("D");
-            }
-
-            if (value == 1000)
-            {
-                Console.WriteLine("M");
-            }
-
-            
-          
-
+            Console.WriteLine(output);
             Console.ReadLine();
         }
-
-
-
     }
+
+
+
+
+    
 }

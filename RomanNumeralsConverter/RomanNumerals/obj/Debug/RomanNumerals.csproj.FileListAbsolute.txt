@@ -1,0 +1,6 @@
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\bin\Debug\RomanNumerals.exe.config
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\bin\Debug\RomanNumerals.exe
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\bin\Debug\RomanNumerals.pdb
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\obj\Debug\RomanNumerals.csprojResolveAssemblyReference.cache
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\obj\Debug\RomanNumerals.exe
+C:\git files\RomanNumerals\RomanNumeralsConverter\RomanNumerals\obj\Debug\RomanNumerals.pdb
