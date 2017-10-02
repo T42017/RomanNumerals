@@ -78,6 +78,13 @@ namespace UnitTestProject3
         }
 
         [TestMethod]
+        public void CanConvert1010()
+        {
+            RomanNumerals roman = new RomanNumerals();
+            Assert.AreEqual("MX", roman.Convert(1010));
+        }
+
+        [TestMethod]
         public void CanConvert1999()
         {
             RomanNumerals roman = new RomanNumerals();
