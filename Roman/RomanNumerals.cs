@@ -21,28 +21,6 @@ namespace Roman
             _romanNumerals.Add(new RomanCharacter(1000, "M"));
         }
 
-        //public string Convert(int number)
-        //{
-        //    StringBuilder romanNumerals = new StringBuilder();
-
-        //    for (var i = _romanNumerals.Count - 1; i > 0; i--)
-        //    {
-        //        for (var y = 0; number >= _romanNumerals[i].Value; y++)
-        //        {
-        //            number -= _romanNumerals[i].Value;
-        //            romanNumerals.Append(_romanNumerals[i].Character);
-
-        //            if (y != 5) continue;
-
-        //            romanNumerals.Remove(romanNumerals.Length - y, y);
-        //            romanNumerals.Append(_romanNumerals[i].Character + _romanNumerals[i + 1].Character);
-        //            number -= _romanNumerals[i].Value;
-        //        }
-        //    }
-
-        //    return romanNumerals.ToString();
-        //}
-
         public string Convert(int number)
         {
             string numberAsString = number.ToString();
