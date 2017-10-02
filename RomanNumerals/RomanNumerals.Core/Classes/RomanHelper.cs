@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RomanNumerals.Core
 {
-    public class HelperMethods
+    public class RomanHelper
     {
         private static readonly Dictionary<int, string> _decimalToRomanTable = new Dictionary<int, string>()
         {
@@ -41,13 +41,13 @@ namespace RomanNumerals.Core
 
         public static string DecimalToRoman(string input)
         {
-            if (input.Any(c => !char.IsNumber(c)) )
+            if (input.Any(c => !char.IsNumber(c)))
                 throw new ArgumentException("Input was not a number.");
 
             int decimalInput = int.Parse(input);
 
-            if (decimalInput <= 0 || decimalInput > 3999)
-                throw new ArgumentException("Number must be within the interval [1~3999].");
+            if (decimalInput <= 0)
+                throw new ArgumentException("Number must be greater than zero.");
 
             var romanBuilder = new StringBuilder();
             foreach (var item in _decimalToRomanTable)

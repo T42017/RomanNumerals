@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RomanNumerals.Core;
 
 namespace RomanNumerals.UI
@@ -15,7 +11,7 @@ namespace RomanNumerals.UI
             try
             {
                 string input = Console.ReadLine();
-                string roman = HelperMethods.DecimalToRoman(input);
+                string roman = RomanHelper.DecimalToRoman(input);
                 Console.WriteLine($"{input} in roman numerals is {roman}");
                 Main(null);
             }
