@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RomanNumerals.Core
 {
-    public class RomanHelper
+    public static class RomanHelper
     {
         private static readonly Dictionary<int, string> _decimalToRomanTable = new Dictionary<int, string>()
         {
