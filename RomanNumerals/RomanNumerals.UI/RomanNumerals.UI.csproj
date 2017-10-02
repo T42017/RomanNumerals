@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RomanNumerals.Core\RomanNumerals.Core.csproj">
+      <Project>{ccca0b71-ca13-4080-823e-818312917b81}</Project>
+      <Name>RomanNumerals.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
