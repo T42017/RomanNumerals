@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,56 +9,47 @@ namespace RomanNumeralConverter
 {
     class Program
     {
-        public static string _number;
-        public static List<string> DecimalNumberList = new List<string>();
+        public static string number;
+        public static int choice;
 
         static void Main(string[] args)
         {
             Console.WriteLine("Roman Numeral Converter\n\nEnter a number:");
-            _number = Console.ReadLine();
-            
 
-            Console.ReadLine();
-            
-            RomanNumeralConverter(_number);
-
-            for (int i = 0; i < DecimalNumberList.Count; i++)
-            {
-                Console.WriteLine(DecimalNumberList[i]);
-            }
-
-            Console.WriteLine();
+            number = Console.ReadLine();
 
             Console.WriteLine("Converting..");
+
+            RomanNumeralConverter(number);
+
+            Console.ReadLine();
         }
 
-        public static void RomanNumeralConverter(string number)
+        public static void RomanNumeralConverter(string chosenNumber)
         {
-            int tusen = 0;
-            int hundra = 0;
-            //..
+            int tusental = 0;
+            int hundratal = 0;
+            int tiotal = 0;
+            int ental = 0;
 
+            string[] tusental_fix = { "", "M", "MM", "MMMM" };
+            string[] hundratal_fix = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+            string[] tiotal_fix = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+            string[] ental_fix = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 
-            string[] hundra_fix = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+            if (chosenNumber.Length >= 4)
+                tusental = int.Parse(chosenNumber[chosenNumber.Length - 4].ToString());
 
-            if(number.Length >= 4)
-                tusen = int.Parse(number[0].ToString());
+            if (chosenNumber.Length >= 3)
+                hundratal = int.Parse(chosenNumber[chosenNumber.Length - 3].ToString());
 
-            if(number.Length >= 3)
-                hundra = int.Parse(number[number.Length - 3].ToString());
+            if (chosenNumber.Length >= 2)
+                tiotal = int.Parse(chosenNumber[chosenNumber.Length - 2].ToString());
 
-            Console.WriteLine(hundra_fix[hundra]);
+            if (chosenNumber.Length >= 1)
+                ental = int.Parse(chosenNumber[chosenNumber.Length - 1].ToString());
 
-            //for (int i = 1; i - numberLength <= 0; i++)
-            //{
-            //    char currentNumber = number[i];
-            //    DecimalNumberList.Add(currentNumber.ToString());
-
-            //    while (i - number.Length > 0)
-            //    {
-            //        DecimalNumberList[i] += 0;
-            //    }
-            //}
+            Console.WriteLine(tusental_fix[tusental] + hundratal_fix[hundratal] + tiotal_fix[tiotal] + ental_fix[ental]);
         }
     }
 }
